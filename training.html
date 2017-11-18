@@ -163,13 +163,13 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Please enter your key word</label>
-                                                <input type="text" class="form-control border-input" placeholder="Key word" value="">
+                                                <input type="text" id="keyword" class="form-control border-input" placeholder="Key word" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Autobot reply</label>
-                                                <input type="text" class="form-control border-input" placeholder="Please enter your answer" value="">
+                                                <input type="text" id="answerkeyword" class="form-control border-input" placeholder="Please enter your answer" value="">
                                             </div>
                                         </div>
 
@@ -180,10 +180,23 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <div class="row">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <th>Question</th>
+                                                <th>Answer</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button type="button" class="btn btn-success">+ Add AI Rule</button>
+                                            <button id="add-ai-rule" type="button" class="btn btn-success">+ Add AI Rule</button>
                                         </div>
                                     </div>
 
@@ -299,5 +312,7 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
+
+    <script src="assets/js/write-to-api.js"></script>
 
 </html>
